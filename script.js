@@ -5,14 +5,23 @@ if (mainOption === 1) {
     
     
     let amount = prompt("Ingrese la cantidad de articulos que desea comprar")
-    
+    let storage = 0
     for (let i = 0; i < amount; i++) {
-        let product = prompt("Ingrese el valor del articulo")
-        let product 
+        
+        if (i == amount -1) {
+            let product = Number(prompt("Ingrese el valor del articulo"))
+        let total = storage  + product
+        storage = total
+        alert("El total de su compra es " + total)
+        }
+        else {
+            let product = Number(prompt("Ingrese el valor del articulo"))
+            let total = storage  + product
+            storage = total
+        }
     }    
-    alert("El valor de los articulos es " + total)
+
+    alert("El total de su compra es " + total)
 }
 if (mainOption === 2) {
 }
-
-
