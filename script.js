@@ -1,4 +1,8 @@
 
+function credentials(user) { 
+return ("Bienvenido/a, " +user)   }
+
+alert(credentials(prompt("Ingresa tu nombre para iniciar")))
 
 let mainOption = Number(prompt("Seleccione una opcion para iniciar: \n1. Realizar pedido \n2. Salir"))
 while (mainOption != 1 && mainOption != 2) {
@@ -27,4 +31,7 @@ if (mainOption === 1) {
     }
     alert("El total de su compra es " + total)
 }
+
+
+
 
